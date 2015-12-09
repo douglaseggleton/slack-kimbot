@@ -1,0 +1,6 @@
+{
+  "name": "Slack Kimbot",
+  "description": "A a real-time Slack bot, who knows all the best places to eat in town.",
+  "repository": "https://github.com/douglaseggleton/slack-kimbot",
+  "keywords": ["node", "slack", "bot"]
+}

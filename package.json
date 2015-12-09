@@ -1,14 +1,24 @@
 {
-  "name": "kimchi",
-  "version": "1.0.0",
+  "name": "slack-kimbot",
+  "version": "0.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "lib/app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node lib/app.js",
+    "test": "node_modules/.bin/jshint --verbose lib test && node_modules/.bin/jscs lib test && mocha"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "douglaseggleton",
+  "license": "MIT",
   "dependencies": {
     "slack-client": "^1.5.0"
+  },
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "jscs": "^2.7.0",
+    "jshint": "^2.8.0",
+    "mocha": "^2.3.4",
+    "proxyquire": "^1.7.3",
+    "sinon": "^1.17.2",
+    "sinon-chai": "^2.8.0"
   }
 }
